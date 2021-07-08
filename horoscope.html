@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="horoscope.css">
+    <script src="horoscope.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 class="txtheader">Find your horoscope for today</h1>
+            <div id="img_horo"></div>
+        </div>
+        <div id="selectionarea">
+            <p><h3 id="txt">SELECT YOUR ZODIAC SIGN</h3></p>
+            <select id="horoscope" name="zodiac" onchange="selffunction()">
+                <option value="default">PLEASE SELECT YOUR ZODIAC</option>
+                <option value="Aries">Aries</option>
+                <option value="Tauras">Tauras</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittaris">Sagittaris</option>
+                <option value="Capricon">Capricon</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+                
+            </select>
+            <input type="button" value="Restart" name="" onclick="window.location.reload()" id="restartbtn" style="visibility: hidden;">
+                </div>
+                <br>
+                <div id="horoscopetxt">
+                    <h3 id="textrow1"></h3>
+                    <textarea id="textrow2" style="margin: 0%;width:1208px;height: 366px;" disabled></textarea>
+                </div>
+                <br>
+    </div>
+    
+</body>
+
+
+</html>

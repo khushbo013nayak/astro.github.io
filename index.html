@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope</title>
+    <link rel="stylesheet" href="horoscope.css">
+
+
+<style>
+body{
+    background-color: lightseagreen;
+}
+    #grad {
+  background-image: linear-gradient(red, yellow);
+
+}
+    #img
+    {
+        position: absolute;
+        top:20%;
+        left:33%;
+        transform: translate(0% 0%);
+        animation: nm 10s infinite;
+
+    }
+     
+    @keyframes nm{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .txt{
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        top: 0%;
+        left: 35%;
+        transform: translate(33%,55%);
+        animation: color 1s infinite;
+    }
+    @keyframes color{
+        0%{color: rgb(159, 209, 20);}
+        25%{color: rgb(66, 77, 233);}
+        50%{color: rgb(243, 32, 138);}
+        100%{color: rgb(236, 38, 38);}
+    }
+    
+
+</style>
+
+</head>
+<body>
+    <h1 class="txt">Horoscope for the day</h1>
+    <div id="img"><a href="C:\Users\User\Desktop\astrologu\horoscope.html"><img src="C:\Users\User\Desktop\astrologu\hs.png"></a></div>
+</body>
+</html>
